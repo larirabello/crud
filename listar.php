@@ -23,7 +23,7 @@
         echo "<tr>";
         echo "<td> {$row["nome"]} </td>";
         echo "<td>".($row["tipo"]=="1" ? "Sex Shop" : "Lingerie")."</td>";
-        echo "<td> {$row["preco"]} </td>";
+        echo "<td> R$ {$row["preco"]} </td>";
         echo "<td> {$row["qtd"]} </td>";
         echo '<td class="col-lg-1 text-center"> <a data-id="'.$row["id"].'" class="botaoDeletar" href="crud.php?action=deletar&id='.$row["id"].'"><span class="glyphicon glyphicon-red glyphicon-remove"></a></td>';
         echo "</tr>";
